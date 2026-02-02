@@ -221,7 +221,7 @@ def main():
             print(f"Early stopping triggered after {PATIENCE} epochs.")
             break
 
-    # 9. 绘图逻辑 (无删减)
+    # 9. 绘图逻辑 
     plt.figure(figsize=(10, 6))
     plt.plot(train_loss_history, label='Training Loss')
     plt.plot(val_loss_history, label='Validation Loss')
