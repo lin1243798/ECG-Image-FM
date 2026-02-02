@@ -5,5 +5,9 @@ Modular Architecture: Signal processing, model adaptation, and datasets are full
 Smart 12-Lead Preprocessing: Features a  hybrid cropping strategy that stabilizes the Y-axis (removing long leads) and precisely crops the signal area via X-axis connectivity analysis.
 High Data Efficiency: Proven via Linear Probe experiments; the foundation model achieves superior performance with only a fraction of labeled data.
 End-to-End Workflow: Streamlined from raw image cropping to cross-modal retrieval and multi-class AUC/ROC evaluation.
-![Uploading image.png…]()
+
+How To Use
+Clone the repository and navigate to the EchoPrime directory git clone 
+Download the model from the release
+pip install -r requirements.txt
 
