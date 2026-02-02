@@ -14,3 +14,7 @@ Download the model from the release
 
 pip install -r requirements.txt
 
+1. Image Preprocessing
+Before training or evaluation, process raw ECG scans using the smart cropper:python scripts/ecg_img_preprocess.py --input_dir data/raw_images --output_dir data/processed_images
+2. Downstream Evaluation (Linear Probe)
+python src/experiments/eval_ptbxl_classification.py
