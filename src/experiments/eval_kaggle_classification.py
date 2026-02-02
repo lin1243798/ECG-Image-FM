@@ -29,7 +29,7 @@ import clip_package as official_clip_module
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {DEVICE}")
 
-# 路径配置 (相对路径化)
+# 路径配置 
 CUSTOM_CSV_PATH = os.path.join(BASE_DIR, 'data', 'ecg_dataset.csv')
 FEATURE_EXTRACTOR_PATH = os.path.join(BASE_DIR, "results", "save_model", "ECG-Image-FM.pth")
 CLIP_MODEL_PATH = os.path.join(BASE_DIR, "models", "ViT-B-32.pt")
@@ -40,8 +40,6 @@ CLIP_IMAGE_FEATURE_DIM = 512
 PROJECTION_DIM = 1024
 CLASSES = ['Abnormal', 'History_MI', 'MI', 'Normal']
 NUM_CLASSES = len(CLASSES) 
-
-# --- 核心修改：固定训练参数 (移除网格搜索) ---
 BATCH_SIZE = 32
 LEARNING_RATE = 1e-2
 EPOCHS = 50 
