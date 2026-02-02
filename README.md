@@ -8,7 +8,7 @@ End-to-End Workflow: Streamlined from raw image cropping to cross-modal retrieva
 
 How To Use
 
-Clone the repository and navigate to the EchoPrime directory git clone 
+Clone the repository and navigate to the EchoPrime directory git clone https://github.com/lin1243798/ECG-Image-FM.git
 
 Download the model from the release
 
@@ -17,4 +17,4 @@ pip install -r requirements.txt
 1. Image Preprocessing
 Before training or evaluation, process raw ECG scans using the smart cropper:python scripts/ecg_img_preprocess.py --input_dir data/raw_images --output_dir data/processed_images
 2. Downstream Evaluation (Linear Probe)
-python src/experiments/eval_ptbxl_classification.py
+python src/experiments/eval_ptbxl_classification.py or python src/experiments/eval_kaggle_classification.py
