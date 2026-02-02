@@ -7,7 +7,10 @@ High Data Efficiency: Proven via Linear Probe experiments; the foundation model 
 End-to-End Workflow: Streamlined from raw image cropping to cross-modal retrieval and multi-class AUC/ROC evaluation.
 
 How To Use
+
 Clone the repository and navigate to the EchoPrime directory git clone 
+
 Download the model from the release
+
 pip install -r requirements.txt
 
